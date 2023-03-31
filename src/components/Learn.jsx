@@ -6,18 +6,26 @@ export default function Learn() {
   const [fruits, setfruits] = useState(dataFruits);
 
   //comportement
+  const handleDelete = (id) =>{
+    console.log(id)
+    const copyFruits = [...fruits]
+    console.log(copyFruits)
+    const updateFruits = copyFruits.filter(item => item.id !== id )
+    console.log(copyFruits)
+    console.log(updateFruits)
+    setfruits(updateFruits)
+  }
 
-<button></button>
   //Affichage0
 
   //{fruits.map( (item) =>{<div>bingo</div>} )}
 
   return (
     <div>
-      <div>{fruits[2].nom}</div>
+      
 
       {fruits.map((item) => (
-        <div key={item.id} >{item.nom}<button>x</button></div>
+        <div key={item.id} >{item.nom}<button onClick={()=>handleDelete(item.id)}>x</button></div>
       ))}
         
     </div>
