@@ -1,10 +1,12 @@
 import "./App.css";
-import Learn from "./components/Learn";
+import Learny from "./components/Learny";
+
+
 
 function App() {
   return (
     <div className="App">
-      <Learn/>
+      <Learny/>
     </div>
   );
 }

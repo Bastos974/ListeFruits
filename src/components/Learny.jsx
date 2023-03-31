@@ -1,7 +1,7 @@
 import { useState } from "react";
 import dataFruits from "../data/dataFruits";
 
-export default function Learn() {
+export default function Learny() {
   //etat donnée
   const [fruits, setfruits] = useState(dataFruits);
 
@@ -25,7 +25,7 @@ export default function Learn() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const id = Date. now()
+    const id = Date.now()
     const nom = inputValue
     const newFruit = {id ,nom}
     const newCopyFruit = [...fruits]
