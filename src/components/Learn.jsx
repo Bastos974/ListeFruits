@@ -46,7 +46,7 @@ export default function Learn() {
       ))}
 
       <form action="submit" onSubmit={handleSubmit}>
-        <input value={inputValue}type="text" onChange={handleChange} />
+        <input value={inputValue}type="text" onChange={handleChange} required />
         <button>valider {inputValue}</button>
 
 
