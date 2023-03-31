@@ -6,9 +6,9 @@ export default function Learn() {
   const [fruits, setfruits] = useState(dataFruits);
 
   //comportement
-  console.log(fruits);
 
-  //Affichage
+<button></button>
+  //Affichage0
 
   //{fruits.map( (item) =>{<div>bingo</div>} )}
 
@@ -17,8 +17,9 @@ export default function Learn() {
       <div>{fruits[2].nom}</div>
 
       {fruits.map((item) => (
-        <div>{item.nom}</div>
+        <div key={item.id} >{item.nom}<button>x</button></div>
       ))}
+        
     </div>
   );
 }
